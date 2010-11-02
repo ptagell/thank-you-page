@@ -87,26 +87,20 @@ figure img {width: 100%;}
 body {
 	background: url("images/background-brighter.png") repeat;
 	padding: 60px 36px 0;
-	width: 696px;
+/*	width: 696px;*/
 }
 
 #content {
 
-  float:left;
-	width:452px;
+	width:596px;
 	background:#f9f9f9;
   height:800px;
-  padding:50px;
-    font-family:"Garamond";
-  border:1px solid #000;
+  padding:20px 50px;
+  border:2px solid rgba(0,0,0,0.5);
+	margin:auto;
   
 }
 
-#aside {
-  float:right;
-  width:120px;
-  font-family:"Garamond";
-}
 
 #content h1 {
   background:url("images/crest.png") no-repeat;
@@ -114,10 +108,16 @@ body {
   width:325px;
   height:116px;
   display:block;
+	margin:auto;
 }
 
+p {
+		font-family:"voluta-script-pro-1","voluta-script-pro-2";
+}
 
-
+	p.date {
+		text-align:right;
+	}
 
 
 /* 
@@ -129,11 +129,16 @@ body {
 
 @media only screen and (max-width: 767px) {
 	
-	body {
-		padding: 48px 28px 0;
+	#content {
+		padding:28px 28px 0;
 		width: 264px;
 	}
 	
+	#content h1 {
+		background:url("images/crest_sml.png") no-repeat;
+		width:259px;
+		height:90px;
+	}
 }
 
 
@@ -147,7 +152,7 @@ body {
 
 @media only screen and (min-width: 1224px) {
 	
-	body {
+	#content {
 		padding: 72px 48px 0;
 		width: 1128px;
 	}
