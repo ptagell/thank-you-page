@@ -86,21 +86,27 @@ figure img {width: 100%;}
 
 body {
 	background: url("images/background-brighter.png") repeat;
-	padding: 60px 36px 0;
+/*	padding: 40px 36px 0;*/
 /*	width: 696px;*/
+	color:#0d004c;
 }
 
 #content {
 
 	width:596px;
 	background:#f9f9f9;
-  height:800px;
-  padding:20px 50px;
+  padding:20px 20px;
   border:2px solid rgba(0,0,0,0.5);
-	margin:auto;
+	margin:20px auto;
+	text-align:center;
   
 }
 
+object {
+	text-align:center;
+	margin:20px auto;
+	width:100%;
+}
 
 #content h1 {
   background:url("images/crest.png") no-repeat;
@@ -109,14 +115,32 @@ body {
   height:116px;
   display:block;
 	margin:auto;
-}
+} 
 
 p {
-		font-family:"voluta-script-pro-1","voluta-script-pro-2";
+		font-family:"adobe-garamond-pro-1","adobe-garamond-pro-2";
+		margin-top:20px;
+		color:rgba(0,0,0,0.8);
+}
+
+h2 {
+		font-family:"tangerine-1","tangerine-2";
+		font-size:4em;
+		margin-top:40px;
+		margin-bottom:30px;
+		font-weight:normal;
 }
 
 	p.date {
 		text-align:right;
+/*		font-family:"voluta-script-pro-1","voluta-script-pro-2";*/
+		font-size:1em;
+		margin-top:0px;
+	}
+	
+	p.signature {
+		font-family:"tangerine-1","tangerine-2";
+		font-size:4em;
 	}
 
 
@@ -130,14 +154,25 @@ p {
 @media only screen and (max-width: 767px) {
 	
 	#content {
-		padding:28px 28px 0;
+		padding:10px 10px 0;
 		width: 264px;
+		text-align:left;
 	}
 	
 	#content h1 {
 		background:url("images/crest_sml.png") no-repeat;
 		width:259px;
 		height:90px;
+	}
+	
+	h2 {
+		font-size:2em;
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	
+	p.signature {
+		font-size:2em;
 	}
 }
 
@@ -155,6 +190,9 @@ p {
 	#content {
 		padding: 72px 48px 0;
 		width: 1128px;
+		text-align:center;
 	}
+	
+
 	
 }
